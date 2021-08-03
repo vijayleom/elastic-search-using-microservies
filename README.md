@@ -25,7 +25,7 @@ Note: The embedded tomcat will serve the rest service under the port mentioned u
 ```
 ./elasticsearch
 ```
-  This runs on 9200 port by default.
+ 	This runs on 9200 port by default.
   
 2. Before starting logstash, copy the logstash.config provided inside the **ELK Files** in the above repository to the bin directory of the logstash agent. 
 Now execute the below:
@@ -39,20 +39,20 @@ Now execute the below:
 ```
 ./kibana
 ```
-  This runs on 5602 port by default.
+  		This runs on 5602 port by default.
 
 
 ## Configuration in the Kibana
 
 1. Once you access kibana in 5602 port - Goto Stack Management -> Kibana Index Pattern
 2. Provide the index as leo_logger_test. You will the index coming in below:
-![Index](https://www.dropbox.com/s/84bsylyltuhi8qh/Screenshot%202021-08-03%20at%204.58.54%20PM.png)
+![Index](https://github.com/vijayleom/elastic-search-using-microservies/blob/master/Screenshot%202021-08-03%20at%204.58.54%20PM.png?raw=true)
 3. In Step 2 of 2: Configure settings, choose "I don't want to use time filter" and click "Create Index Pattern"
 4. You will see the field that are pre rendered which now can be used as filters in the consolidated logger search.
 5. Goto "Discover" under analytics as in below:
-![Discover](https://www.dropbox.com/s/dlmjuacu4l4gu2y/Screenshot%202021-08-03%20at%205.03.04%20PM.png)
+![Discover](https://github.com/vijayleom/elastic-search-using-microservies/blob/master/Screenshot%202021-08-03%20at%205.03.04%20PM.png?raw=true)
 6. You can choose the respective field from the side panel to see specific information on the logger related.
-![Filter](https://www.dropbox.com/s/nqub8e8o1rfe8hf/Screenshot%202021-08-03%20at%205.05.24%20PM.png)
+![Filter](https://github.com/vijayleom/elastic-search-using-microservies/blob/master/Screenshot%202021-08-03%20at%205.05.24%20PM.png?raw=true)
 7. You can also configure the analytics dashboard based on the fields that got created from the index. This will help in Graphical representation of the data.
 
 ## Queries:
@@ -60,6 +60,6 @@ Now execute the below:
 - Need to get the full benefit of the visulization of the log information in the Dashboard with apt filters.
 - Adding custom filter based on patterns to track the log.
 - Filtering keywords in "KQL" to support the special characters based filtering in the search under the message field.
-![Filtering Limitations](https://www.dropbox.com/s/6h9s38bwk9l3a5l/Screenshot%202021-08-03%20at%205.11.54%20PM.png)
+![Filtering Limitations](https://github.com/vijayleom/elastic-search-using-microservies/blob/master/Screenshot%202021-08-03%20at%205.11.54%20PM.png?raw=true)
 
 -- Please add your suggestion or correctness in case any uncovered.
