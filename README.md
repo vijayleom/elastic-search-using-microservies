@@ -25,7 +25,7 @@ Note: The embedded tomcat will serve the rest service under the port mentioned u
 ```
 ./elasticsearch
 ```
- 	This runs on 9200 port by default.
+ 	 This runs on 9200 port by default.
   
 2. Before starting logstash, copy the logstash.config provided inside the **ELK Files** in the above repository to the bin directory of the logstash agent. 
 Now execute the below:
@@ -39,12 +39,12 @@ Now execute the below:
 ```
 ./kibana
 ```
-  		This runs on 5602 port by default.
+    This runs on 5601 port by default.
 
 
 ## Configuration in the Kibana
 
-1. Once you access kibana in 5602 port - Goto Stack Management -> Kibana Index Pattern
+1. Once you access kibana in 5601 port - Goto Stack Management -> Kibana Index Pattern
 2. Provide the index as leo_logger_test. You will the index coming in below:
 ![Index](https://github.com/vijayleom/elastic-search-using-microservies/blob/master/Screenshot%202021-08-03%20at%204.58.54%20PM.png?raw=true)
 3. In Step 2 of 2: Configure settings, choose "I don't want to use time filter" and click "Create Index Pattern"
