@@ -7,7 +7,7 @@ in the applciation.yml. To have understanding on the profiles - my-first-app is 
 ## Run Java Application
 
 ```bash
-mvn springboot-run
+mvn spring-boot:run
 ```
 Note: The embedded tomcat will serve the rest service under the port mentioned under application.yml
 
