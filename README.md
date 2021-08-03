@@ -25,19 +25,21 @@ Note: The embedded tomcat will serve the rest service under the port mentioned u
 ```
 ./elasticsearch
 ```
-### This runs on 9200 port by default.
+  This runs on 9200 port by default.
+  
 2. Before starting logstash, copy the logstash.config provided inside the **ELK Files** in the above repository to the bin directory of the logstash agent. 
 Now execute the below:
 ```
 ./logstash -f logstash.config
 ```
 Once logstash is started the log details in the log files are loaded as NoSQL entries and push in the pipe to the 9200 port as configured in the config file.
+
 3. Before starting kibana, copy the kibana.yml provided inside the **ELK Files** in the above repository to the bin directory of the kibana agent. 
 Now execute the below:
 ```
 ./kibana
 ```
-### This runs on 5602 port by default.
+  This runs on 5602 port by default.
 
 
 ## Configuration in the Kibana
